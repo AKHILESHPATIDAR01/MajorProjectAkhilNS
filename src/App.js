@@ -5,18 +5,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+          <section>
+            <div className="content">
+              <h2>Ecommerce Website Clone</h2>
+              <p>Its an Ecommerce website which is not normal my friends ,<br></br>
+                it will be having some special functionality, just wait and watch.<br></br>
+                Thanking you
+    
+              </p>
+              
+            </div>
+          </section>
+
       </header>
     </div>
   );

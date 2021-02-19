@@ -14,6 +14,8 @@ function App() {
                 Thanking you
     
               </p>
+    
+          <h2> My Mentor is : NAMITA ARORA MA'AM</h2>
               
             </div>
           </section>

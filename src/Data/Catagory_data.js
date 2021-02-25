@@ -16,7 +16,7 @@ const catagory_data = [
     },
     {
         id: 4,
-        catagory_name: "Home Decore",
+        catagory_name: "Decore",
         thumb: "./images/banner.png",
     },
     {

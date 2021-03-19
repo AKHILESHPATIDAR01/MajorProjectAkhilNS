@@ -13,7 +13,7 @@ const Header = () => {
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#share" class="nav__link">Products</a></li>
                         <li class="nav__item"><a href="#catagoryBox" class="nav__link">single-Product</a></li>
-                        <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
+//                         <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
                         <li class="nav__item">
                             <ul>
                                 <li><i class='bx bx-cart'></i></li>

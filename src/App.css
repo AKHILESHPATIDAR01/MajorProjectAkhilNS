@@ -170,7 +170,7 @@ img{
 }
 
 .nav__logo:hover{
-  color: #DA2535;
+  color: #ffce81;
 }
 
 .nav__link{
@@ -178,7 +178,7 @@ img{
 }
 
 .nav__link:hover{
-  color: #DA2535;
+  color: #ffce81;
 }
 
 .nav__link i{
@@ -203,7 +203,7 @@ img{
 }
 
 .nav__item ul li:hover{
-    color: #DA2535;
+    color: #ffce81;
 }
 
 
@@ -255,7 +255,7 @@ img{
 }
 
 .scrolltop:hover{
-  background-color: #DA2535;
+  background-color: #ffce81;
 }
 
 .scrolltop__icon{ 
@@ -291,7 +291,7 @@ img{
 /*========== BUTTONS ==========*/
 .button{
   display: inline-block;
-  background-color: #DA2535;
+  background-color: #ffce81;
   color: #fff;
   padding: 1rem 1.5rem;
   border-radius: .5rem;
@@ -306,7 +306,7 @@ img{
 .button-link{
   background: none;
   padding: 0;
-  color: #DA2535;
+  color: #ffce81;
 }
 
 .button-link:hover{

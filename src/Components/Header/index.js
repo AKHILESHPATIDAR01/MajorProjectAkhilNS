@@ -13,17 +13,20 @@ const Header = () => {
         <>
             <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Ecommerce</a>
+                  <Link to='/'>
+                    <a href="#" class="nav__logo">Ecommerce</a>
+                  </Link>
+                  
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
+                        {/* <li class="nav__item">
                             <Link to='/'>
                                 <a href="#home" class="nav__link">Home</a>
                             </Link>
-                        </li>
+                        </li> */}
 
-                        <li class="nav__item">
+                        {/* <li class="nav__item">
                             <Link to='/productList'>
                                 <a href="#home" class="nav__link">Products</a>
                             </Link>
@@ -33,7 +36,7 @@ const Header = () => {
                             <Link to="/productSingle">
                                 <a href="#home" class="nav__link">single-Product</a>
                             </Link>
-                        </li>
+                        </li> */}
                         {/* <li class="nav__item"><a href="#share" class="nav__link">Products</a></li>
                         <li class="nav__item"><a href="#catagoryBox" class="nav__link">single-Product</a></li> */}
                         <li class="nav__item">
@@ -43,8 +46,8 @@ const Header = () => {
                                          <i class='bx bx-cart'></i><span className="cart-item-num">{shoppingCart.length}</span>    
                                     </Link>
                                 </li>
-                                <li><i class='bx bx-heart'></i><span className="cart-item-num">0</span></li>
-                                <li><i class='bx bx-user'></i><span className="cart-item-online"></span></li>
+                                {/* <li><i class='bx bx-heart'></i><span className="cart-item-num">0</span></li>
+                                <li><i class='bx bx-user'></i><span className="cart-item-online"></span></li> */}
                             </ul>
                         </li>
                         

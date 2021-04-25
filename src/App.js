@@ -3,36 +3,51 @@ import './App.css';
 import Header from './Components/Header';
 import Mainpage from './Components/Mainpage';
 import Footer from './Components/Footer';
+import { BrowserRouter , Switch , Route } from 'react-router-dom'
+import ProductList from './Components/ProductList';
+import ProductSingle from './Components/ProductSingle';
+import ProductContextProvider from './Global/productContext';
+import CartContextProvider from './Global/cartContext';
+import Cart from './Components/Cart';
 
 
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-          <section>
-            <div className="content">
-              <h2>Ecommerce Website Clone</h2>
-              <p>Its an Ecommerce website which is not normal my friends ,<br></br>
-                it will be having some special functionality, just wait and watch.<br></br>
-                Thanking you
-<<<<<<< HEAD
-    
-              </p>
-    
-          <h2> My Mentor is : NAMITA ARORA MA'AM</h2>
+    <ProductContextProvider >
+        <CartContextProvider >   
+          <BrowserRouter>
+            <Header />
+              <Switch>
+                  <Route path="/" exact>
+                    <Mainpage />
+                  </Route> 
+            
+
+            
+                  <Route path="/productList/:catagory_name" exact>
+                    <ProductList />
+                  </Route> 
               
-=======
-              </p>             
->>>>>>> df7772d... ecommerceOne
-            </div>
-          </section>
-      </header> */}
 
-      <Header />
-      <Mainpage />
-      <Footer />
+              
+                  <Route path="/productSingle/:id" exact>
+                    <ProductSingle />
+                  </Route>
 
+                  <Route path="/cart" exact>
+                    <Cart />
+                  </Route>
+
+              </Switch>
+
+
+
+            <Footer />
+          </BrowserRouter>
+        </CartContextProvider>
+        </ProductContextProvider>
     </div>
   );
 }

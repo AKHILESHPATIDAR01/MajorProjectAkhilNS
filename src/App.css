@@ -87,6 +87,14 @@ a{
   text-decoration: none;
 }
 
+i{
+  color: #282c34;
+}
+
+span{
+  color: #282c34;
+}
+
 img{
   max-width: 100%;
   height: auto;

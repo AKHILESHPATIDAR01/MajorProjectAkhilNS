@@ -26,7 +26,7 @@ const ProductSingle = () => {
                 <p className="s-p-description">{item.description}</p>
                 <p className="s-p-catagory">{item.category}</p>
                 <div className="s-p-price-portion">
-                    <p className="s-p-price">${item.price}</p>
+                    <p className="s-p-price"> ₹{item.price}</p>
                     <button className="s-p-btn" onClick={() => dispatch({type: 'ADD_TO_CART', id: item.id, products})} >Add To Cart</button>
                 </div>
             </div>

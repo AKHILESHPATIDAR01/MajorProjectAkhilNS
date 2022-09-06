@@ -27,13 +27,11 @@ export const WishListReducer = (state, action) => {
             // break;
         
         case 'INC':
-            console.log('Inc run');
             product = shoppingCart.find(product => product.id === action.id);
             index = shoppingCart.findIndex(product => product.id === action.id);
             product.qty = product.qty + 1;
             updatedQty = qty + 1;
             totalPrice = totalPrice + product.price;
-            console.log(product, totalPrice);
             shoppingCart[index] = product;
             return {shoppingCart: [...shoppingCart], totalPrice: totalPrice, message: '', qty: updatedQty}
             // break;
@@ -42,12 +40,10 @@ export const WishListReducer = (state, action) => {
         product = shoppingCart.find(product => product.id === action.id);
         index = shoppingCart.findIndex(product => product.id === action.id);
        if(product.qty > 1){
-           console.log('Yes graer');
        product.qty = product.qty - 1;
        updatedPrice = totalPrice - product.price;
        updatedQty = qty - 1;
        shoppingCart[index] = product;
-       console.log("afer dec",shoppingCart);
        return {shoppingCart: [...shoppingCart], totalPrice: updatedPrice, message: '', qty: updatedQty};
        } else {
            return {shoppingCart: [...shoppingCart], totalPrice: totalPrice, message: '', qty: qty}

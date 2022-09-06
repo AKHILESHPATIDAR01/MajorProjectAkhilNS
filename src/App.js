@@ -22,28 +22,17 @@ function App() {
               <Switch>
                   <Route path="/" exact>
                     <Mainpage />
-                  </Route> 
-            
-
-            
+                  </Route>
                   <Route path="/productList/:catagory_name" exact>
                     <ProductList />
-                  </Route> 
-              
-
-              
+                  </Route>
                   <Route path="/productSingle/:id" exact>
                     <ProductSingle />
                   </Route>
-
                   <Route path="/cart" exact>
                     <Cart />
                   </Route>
-
               </Switch>
-
-
-
             <Footer />
           </BrowserRouter>
         </CartContextProvider>

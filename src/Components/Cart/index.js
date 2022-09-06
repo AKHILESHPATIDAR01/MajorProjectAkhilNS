@@ -15,9 +15,9 @@ function Cart() {
             <div className="cartProduct-details">
                 <div className="c-p-title-small">{item.title_small}</div>
                 <div className="c-p-catagory">{item.category}</div>
-                <div className="c-p-price">${item.price}</div>
+                <div className="c-p-price">₹{item.price}</div>
                 <button className="c-p-btn" onClick={() => dispatch({type: 'DEC', id: item.id, products})} >-</button>
-                <div className="c-p-price1">${item.qty * item.price}</div>
+                <div className="c-p-price1"> {item.qty}</div>
                 <button className="c-p-btn" onClick={() => dispatch({type: 'INC', id: item.id, products})} >+</button>
                 <button className="c-p-btn1" onClick={() => dispatch({type: 'DELETE_PRODUCT', id: item.id, products})} >x</button>
             </div>
@@ -39,7 +39,7 @@ function Cart() {
                             <div className="cart-summry">
                                 <p className="c-s-heading">Cart Summary</p>
                                 <p className="c-s-totalItems">Total Items : {qty} </p>
-                                <p className="c-s-totalAmmout">Total Ammount : ${totalPrice}</p>     
+                                <p className="c-s-totalAmmout">Total Ammount : ₹{totalPrice}</p>
                                 <button className="c-s-paybtn">Pay</button>
                             </div>
                         </div>
